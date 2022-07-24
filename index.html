@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style class="fart">
+            :root {
+                  --r: 0deg;
+                  --d: 0;
+            }
+
+            ::-webkit-scrollbar {
+                  display: none;
+            }
+
+            body {
+                  overflow: hidden !important;
+                  user-select: none !important;
+            }
+
+            .abcdefghijklmnopqrstuvwxyz {
+                  height: 100vh;
+                  width: 100vw;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  z-index: 1000;
+                  background: linear-gradient(to right, #2c5364, #0f2027);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  overflow: hidden;
+            }
+
+            .abcdefghijklmnopqrstuvwxy {
+                  position: absolute;
+                  width: 250px;
+                  height: 40%;
+                  transform-style: preserve-3d;
+                  animation: rotate 30s linear 0s infinite;
+                  transform: perspective(1000px) rotateY(var(--r));
+                  transition: 0.25s linear;
+                  top: 20%;
+            }
+
+            .abcdefghijklmnopqrstuvwxy span {
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  width: 100%;
+                  height: 100%;
+                  transform-origin: center;
+                  transform-style: preserve-3d;
+                  transform: rotateY(calc(var(--i)*var(--d)*1deg)) translateZ(400px);
+            }
+
+            .abcdefghijklmnopqrstuvwxy span img {
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 10px;
+                  object-fit: cover;
+                  transition: 2s;
+            }
+
+            .abcdefghijklmnopqrstuvwx {
+                  width: 100vw;
+                  height: 100px;
+                  position: absolute;
+                  bottom: 20px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-evenly;
+            }
+
+            .abcdefghijklmnopqrstuvwx span {
+                  padding: 3px 30px;
+                  border: 1px solid #ffffff;
+                  background: #ffffff00;
+                  box-sizing: content-box;
+                  cursor: pointer;
+                  transition: 0.25s linear;
+            }
+
+            .abcdefghijklmnopqrstuvwx .abcdefghiklmn {
+                  background: #ffffff;
+            }
+
+            .abcdefghijklmnopqrstuvw {
+                  position: absolute !important;
+                  top: 0;
+                  right: 0;
+                  padding: 0px;
+                  fill: #ffffffc9;
+            }
+
+            .abcdefghijklmnopqrstuvw:hover {
+                  fill: #f95246;
+                  cursor: pointer;
+            }
+      </style>
+</head>
+
+<body>
+      <div class="abcdefghijklmnopqrstuvwxyz">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" class="abcdefghijklmnopqrstuvw">
+                  <path
+                        d="m12.55 37.05-1.6-1.6L22.4 24 10.95 12.55l1.6-1.6L24 22.4l11.45-11.45 1.6 1.6L25.6 24l11.45 11.45-1.6 1.6L24 25.6Z" />
+            </svg>
+            <div class="abcdefghijklmnopqrstuvwxy">
+                  <span style="--i:1"><img
+                              src="https://raw.githubusercontent.com/chashmat/wt-should-name-be/main/images/1.jpg"
+                              alt="mountain"></span>
+                  <span style="--i:2"><img
+                              src="https://raw.githubusercontent.com/chashmat/wt-should-name-be/main/images/2.jpg"
+                              alt="mountain"></span>
+                  <span style="--i:3"><img
+                              src="https://raw.githubusercontent.com/chashmat/wt-should-name-be/main/images/3.jpg"
+                              alt="mountain"></span>
+                  <span style="--i:4"><img
+                              src="https://raw.githubusercontent.com/chashmat/wt-should-name-be/main/images/4.jpg"
+                              alt="mountain"></span>
+                  <span style="--i:5"><img
+                              src="https://raw.githubusercontent.com/chashmat/wt-should-name-be/main/images/5.jpg"
+                              alt="mountain"></span>
+            </div>
+            <div class="abcdefghijklmnopqrstuvwx">
+                  <span id="1" class="abcdefghiklmn"></span>
+                  <span id="2"></span>
+                  <span id="3"></span>
+                  <span id="4"></span>
+                  <span id="5"></span>
+            </div>
+      </div>
+      <script src="./script.js"></script>
+</body>
+
+</html>
