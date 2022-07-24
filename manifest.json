@@ -1,0 +1,13 @@
+{
+      "name": "What Should Be The Name",
+      "version": "1.0",
+      "description": "Hurting butt as much as we can!!",
+      "content_scripts": [
+            {
+                  "matches": [ "<all_urls>" ],
+                  "js": [ "script.js" ],
+                  "css": [ "style.css" ]
+            }
+      ],
+      "manifest_version": 3
+}
